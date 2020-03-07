@@ -1,0 +1,10 @@
+
+Generalise the conversion of file formats. have one "convert.ps1" and have user type or select "gif" for example. 
+
+scripts > squip
+scripts > add to path
+scripts > look into using the new parallel option in foreach for powershell 7.
+
+Bad ideas(?):
+scripts > css compact and expand
+scripts > smart detect compress png or jpg
