@@ -1,9 +1,10 @@
 
-Generalise the conversion of file formats. have one "convert.ps1" and have user type or select "gif" for example. 
+* Generalise the conversion of file formats. have one "convert.ps1" and have user type or select "gif" for example. 
+* look into using the new parallel option in foreach for powershell 7.
+* Fix bulk hashing
 
 scripts > squip
 scripts > add to path
-scripts > look into using the new parallel option in foreach for powershell 7.
 
 Bad ideas(?):
 scripts > css compact and expand
