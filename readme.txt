@@ -1,4 +1,4 @@
-context-menu-scripts
+sendto-scripts
 
 A lot of simple scripts primarily made just for more convenient bulk selection and processing of images. It's much faster to select the target files then right-click > send-to than opening a command prompt and typing the needed line everytime.
 
