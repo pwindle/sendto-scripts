@@ -1,4 +1,18 @@
-$algorithm = 'sha256'
+$algorithm = Read-Host 'Type the desired algorithm. Valid options are:
+
+    SHA1
+    SHA256
+    SHA384
+    SHA512
+    MD5
+
+> '
+
+if (($algorithm -eq "sha512") -or 
+    ($algorithm -eq "sha384")) {
+	[console]::WindowWidth=192
+	[console]::BufferWidth=[console]::WindowWidth
+}
 
 cls
 '' | Write-Host
@@ -22,6 +36,8 @@ foreach ($arg in $args ) {
 "`n" + $args.length.ToString() + " files hashed`n" | echo
 
 if ($args.length -eq 1) {
-	Read-Host "`nPress any key to copy hash to the clipboard"
 	$table.Hash | Set-Clipboard
+	Write-Host "`nHash copied to clipboard"
 }
+
+Read-Host
