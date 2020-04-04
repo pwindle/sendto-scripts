@@ -6,7 +6,7 @@ $percent = 0
 foreach ($arg in $args) {
 	$name = $arg.split(".")[0]
 	$newname = $name + ".png"
-	Write-Progress -Activity "Cropping and centering images" -Status "$percent_formatted% Complete:" -PercentComplete $percent;
+	Write-Progress -Activity "Converting svg to png" -Status "$percent_formatted% Complete:" -PercentComplete $percent;
 	inkscape -z -e $newname -w $width $arg
 	$count++
 	$percent = $count / $args.count * 100
