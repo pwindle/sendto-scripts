@@ -5,7 +5,7 @@ A lot of simple scripts primarily made just for more convenient bulk selection a
 REQUIREMENTS: 
 Powershell
 For converting images and videos: imagemagick, ffmpeg. 
-Other: pdfsizeopt, Inkscape, Excel
+Other: pdfsizeopt, Inkscape, svgo, Excel
 
 
 INSTALLING:
