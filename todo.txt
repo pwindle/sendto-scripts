@@ -1,5 +1,6 @@
 
 TODO:
+	scripts > aud2wav can't handlesingle quotes (') in filename right. escape them.
 	scripts > squip
 	scripts > add to path
 	scripts > look into using the new parallel option in foreach for powershell 7.
