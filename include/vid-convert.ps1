@@ -1,5 +1,6 @@
 $filetype = Read-Host "Enter the desired output codec. Valid options:
 
+avi
 h264
 h265
 vp8
@@ -18,6 +19,7 @@ $ext = "mp4"
 # Set command string
 switch ($filetype)
 {
+	"avi"  { $ext = "avi"; $command = "-vf scale=$resizeString -auto-alt-ref 0"; break }
 	"h264" { $command = "-c:v libx264 -preset slow -crf 22 -vf scale=$resizeString -c:a aac -auto-alt-ref 0"; break }
 	"h265" { $command = "-c:v libx265 -preset slow -crf 22 -vf scale=$resizeString -c:a aac -auto-alt-ref 0"; break }
 	"vp8"  { $ext = "webm"; $command = "-c:v libvpx     -crf 30 -b:v 0 -vf scale=$resizeString -c:a libopus -deadline good -auto-alt-ref 0"; break }

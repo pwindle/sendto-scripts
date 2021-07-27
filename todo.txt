@@ -1,5 +1,6 @@
 
 TODO:
+	scripts > consolidate vtt and au2wav into a generic ffmpeg convert to
 	scripts > aud2wav can't handlesingle quotes (') in filename right. escape them.
 	scripts > squip
 	scripts > add to path
